@@ -24,17 +24,17 @@ const menuItems = [
           icon: <MdDashboard />,
         },
         {
-          title: "Users",
+          title: "Pelanggan",
           path: "/dashboard/users",
           icon: <MdSupervisedUserCircle />,
         },
         {
-          title: "Products",
+          title: "Produk",
           path: "/dashboard/products",
           icon: <MdShoppingBag />,
         },
         {
-          title: "Transactions",
+          title: "Transaksi",
           path: "/dashboard/transactions",
           icon: <MdAttachMoney />,
         },
@@ -89,7 +89,7 @@ const Sidebar = () => {
                 </div>
             </div>
 
-            <ul>
+            <ul className={styles.list}>
             
             {menuItems.map(cat => (
                 <li key={cat.title}>
